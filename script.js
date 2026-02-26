@@ -1,4 +1,4 @@
-const LOG_URL = 'https://script.google.com/macros/s/AKfycbzMlfh1CSdFooOu4AYpP6L4zaFzJwonawgyX7QAKs2P0HNdNygrQSP6N37to2C4iIyk/exec';
+const LOG_URL = 'https://script.google.com/macros/s/AKfycbzrsmOv0j6nrWheVMFCp5BebtFCIo02G_jrw8Z3SbSVxQvLENN2rsLyuHZ83EqCTd_3/exec';
 
 document.addEventListener('DOMContentLoaded', function () {
   const participantInput = document.getElementById('participant_id');
