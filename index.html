@@ -1,5 +1,86 @@
-<html>
-  <body>
-    <h1>IFC‑LLM experiment</h1>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IFC‑LLM Experiment</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      line-height: 1.5;
+    }
+    h1 {
+      margin-bottom: 0.2em;
+    }
+    .meta, .task, .question, .answer {
+      margin-bottom: 1.5em;
+      padding: 1em;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+    }
+    label {
+      font-weight: 600;
+      display: block;
+      margin-bottom: 0.3em;
+    }
+    input[type="text"], textarea {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 0.5em;
+      font-family: inherit;
+    }
+    textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+    button {
+      padding: 0.6em 1.2em;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .small-note {
+      font-size: 0.9em;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>IFC‑LLM Experiment</h1>
+  <p class="small-note">
+    Please follow the instructions below and answer the task using the text box.
+  </p>
+
+  <div class="meta">
+    <label>Participant ID</label>
+    <input type="text" id="participant_id" placeholder="e.g. P01">
+  </div>
+
+  <div class="task">
+    <label>Task description</label>
+    <p>
+      Here you will later paste the instruction for this specific task 
+      (e.g., a short IFC-related question or scenario).
+    </p>
+  </div>
+
+  <div class="question">
+    <label>Your question to the assistant</label>
+    <textarea id="user_query" placeholder="Type your question here..."></textarea>
+  </div>
+
+  <div>
+    <button id="send_button" disabled>Send (coming soon)</button>
+    <span class="small-note">Button disabled until JavaScript is connected.</span>
+  </div>
+
+  <div class="answer">
+    <label>LLM answer</label>
+    <div id="llm_answer_box">
+      The model's answer will appear here once the JavaScript and logging are connected.
+    </div>
+  </div>
+
+</body>
 </html>
